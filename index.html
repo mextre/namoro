@@ -60,15 +60,15 @@
     </div>
 
     <script>
+        const  noButton = document.getElementById('noButton');
         const yesButton = document.getElementById('yesButton');
-        const noButton = document.getElementById('noButton');
 
         yesButton.addEventListener('click', () => {
             const x = Math.random() * (window.innerWidth - 100);
             const y = Math.random() * (window.innerHeight - 50);
             yesButton.style.position = 'absolute';
-            yesButton.style.left = `${x}px`;
-            yesButton.style.top = `${y}px`;
+            yesButton.style.left = `${y}px`;
+            yesButton.style.top = `${x}px`;
         });
 
         noButton.addEventListener('click', () => {
